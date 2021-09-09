@@ -138,7 +138,6 @@ public class PlayerMovement : MonoBehaviour
         character.Move(movementVector * moveSpeed * Time.deltaTime);
 
         character.Move(gravVelocity * Time.deltaTime);
-        Debug.Log(isGrounded + "     " + gravVelocity);
 
         if (Vector3.Distance(lastPos, transform.position) > 0.03 && isGrounded && !headBobbing)
         {
