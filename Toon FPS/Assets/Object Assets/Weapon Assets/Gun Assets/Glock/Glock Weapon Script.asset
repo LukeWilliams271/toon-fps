@@ -85,7 +85,7 @@ MonoBehaviour:
     camShakeFadeOutTime: 1
   weaponProperties:
     altFireWeaponScript: {fileID: 0}
-    weaponStatus: {fileID: 0}
+    weaponStatus: {fileID: 11400000, guid: 01271afaa99c8394db670ec5445c5338, type: 2}
     spreadPattern: {fileID: 4196894342222308177, guid: bf613c8d6415f2f4eb32e4581d087bb5,
       type: 3}
     shootForce: 75

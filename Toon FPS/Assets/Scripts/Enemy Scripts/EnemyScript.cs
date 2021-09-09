@@ -101,6 +101,11 @@ public class EnemyScript : MonoBehaviour
 
     private Vector3 gravVel, addToMove, lastFrameMoveVector;
 
+    float lerpTime = 300;
+    float lerpValue;
+
+    float flyingEnemyY;
+
     public void Start()
     {
         //hook up some of the important components
@@ -294,6 +299,22 @@ public class EnemyScript : MonoBehaviour
 
         float randomZ = Random.Range(-enemy.walkPointRange, enemy.walkPointRange);
         float randomX = Random.Range(-enemy.walkPointRange, enemy.walkPointRange);
+
+        if (enemy.flying)
+        {
+            RaycastHit heightCheck;
+            Physics.Raycast(transform.position, Vector3.down, out heightCheck, whatIsGround);
+            if (Vector3.Distance(transform.position, heightCheck.transform.position) < 5)
+            {
+                flyingEnemyY = Random.Range(0, enemy.walkPointRange / 2);
+            }
+            else if (Vector3.Distance(transform.position, heightCheck.transform.position) > 15)
+            {
+                flyingEnemyY = Random.Range(-enemy.walkPointRange / 2, 0);
+            } else flyingEnemyY = Random.Range(-enemy.walkPointRange / 2, enemy.walkPointRange / 2);
+        }
+        else flyingEnemyY = 0;
+
         RaycastHit hit;
         Physics.Raycast(transform.position, new Vector3(randomX, 0, randomZ), out hit, 1f);
         RaycastHit hitTwo;
@@ -309,7 +330,7 @@ public class EnemyScript : MonoBehaviour
     {
         bool isGrounded = Physics.Raycast(transform.position, Vector3.down, 1.2f, whatIsGround);
         Vector3 moveVector = new Vector3(0, 0, 0);
-        if (isGrounded)
+        if (isGrounded || enemy.flying)
         {
             gravVel = new Vector3(0, 0, 0);
             if (isDead) moveVector = new Vector3(0, 0, 0);
@@ -319,12 +340,28 @@ public class EnemyScript : MonoBehaviour
         {
             gravVel += Vector3.down * gravity * Time.deltaTime;
         }
-        moveVector += addToMove;
-        addToMove = new Vector3(0, 0, 0);
+        if (addToMove != new Vector3(0, 0, 0))
+        {
+            addToMove = Vector3.Lerp(addToMove, new Vector3(0, 0, 0), 0.5f);
+        }
+        if (enemy.flying)
+        {
+            moveVector += new Vector3(0, flyingEnemyY, 0);
+        } else
+        {
+            moveVector = new Vector3(moveVector.x, 0, moveVector.z);
+        }
+        if (moveVector != lastFrameMoveVector) lerpValue = 12;
+
+        if (lerpValue - lerpTime * Time.deltaTime >= 0) lerpValue = lerpValue - lerpTime * Time.deltaTime;
+        else lerpValue = 0;
+
+        moveVector = Vector3.Lerp(moveVector, lastFrameMoveVector, lerpValue / 12);
         lastFrameMoveVector = moveVector;
         transform.LookAt(transform.position + new Vector3(moveVector.x, 0, moveVector.z).normalized);
 
-        cont.Move(new Vector3(moveVector.x, 0, moveVector.z) * Time.deltaTime);
+        cont.Move(moveVector * Time.deltaTime);
+        cont.Move(addToMove * 10 * Time.deltaTime);
         cont.Move(gravVel * Time.deltaTime);
 
         Debug.DrawRay(transform.position, moveVector, Color.blue, 0.1f);

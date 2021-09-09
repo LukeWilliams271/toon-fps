@@ -32,12 +32,12 @@ MonoBehaviour:
   - {fileID: -7907408928813415774, guid: 534525cc15758c843bfca6519f2a0819, type: 3}
   - {fileID: -8357962803430291033, guid: 534525cc15758c843bfca6519f2a0819, type: 3}
   maxHealth: 50
-  moveSpeed: 50
+  moveSpeed: 20
   flying: 1
   hitboxSize: {x: 3, y: 2}
   hitboxCenter: {x: 0.1, y: 0.1}
   agentType: 1
-  chaseRange: 60
+  chaseRange: 0
   LOSSightRange: 200
   minSightRange: 25
   minAttackCountdown: 7
