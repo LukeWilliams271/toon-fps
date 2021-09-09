@@ -322,7 +322,6 @@ public class EnemyScript : MonoBehaviour
         moveVector += addToMove;
         addToMove = new Vector3(0, 0, 0);
         lastFrameMoveVector = moveVector;
-        Debug.Log(isGrounded + "  :  " + moveVector + "  :  WalkPoint = " + walkPoint);
         transform.LookAt(transform.position + new Vector3(moveVector.x, 0, moveVector.z).normalized);
 
         cont.Move(new Vector3(moveVector.x, 0, moveVector.z) * Time.deltaTime);
