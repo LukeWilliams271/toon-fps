@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21176cde79dcbd94bbeb5a938a3a3911, type: 3}
+  m_Name: Explosion Attack Pattern
+  m_EditorClassIdentifier: 
+  vFXAndSFX:
+    shootSFX: 
+    startingLag: 0
+    endingLag: 0
+    bulletSprites: []
+    impactTexture: []
+    impactTextureSize: {x: 3, y: 3, z: 3}
+    impactOnBounce: 0
+    dirAnimations:
+      clips:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+  weaponProperties:
+    spreadPattern: {fileID: 5517565927119434584, guid: 7ba4aeb4202a8e340bbae293c9e81919,
+      type: 3}
+    range: 0
+    strafePattern: {fileID: 0}
+    shootForce: 2
+    upwardForce: 7
+    spread: 2
+    timeBetweenShots: 0.01
+    bulletsPerTap: 15
+  bulletProperties:
+    bulletSize: 2
+    bulletDamage: 0
+    maxLifetime: 1000
+    guided: 0
+    guidedRampUp: 0
+  bulletPhysics:
+    bounciness: 0.1
+    gravityMultiplier: 0.3
+    maxCollisions: 10
+  explosionProperties:
+    explodesOnLifetime: 0
+    explodesOnCollision: 0
+    explodeOnHit: 0
+    explosionAnimation: {fileID: 0}
+    explosionAttackPattern: {fileID: 0}

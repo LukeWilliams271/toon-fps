@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde1a7d0ea41ef14c90719628d1c78a1, type: 3}
+  m_Name: ZombieSoldier
+  m_EditorClassIdentifier: 
+  animCont: {fileID: 9100000, guid: 9c932c7ec4e97ee42a5e099c74f0bec9, type: 2}
+  deathAnimation: {fileID: 7400000, guid: fa2ef4678ef5f1f4ca7e1271808aa3eb, type: 2}
+  animations:
+  - clips:
+    - {fileID: 7400000, guid: f9437572a021b2e4b8bb4631e01a72d2, type: 2}
+    - {fileID: 7400000, guid: d1f92499e41767f4a92183f4fc7487f5, type: 2}
+    - {fileID: 7400000, guid: 45a5eb0b2a7309742b2f7241dbbcacca, type: 2}
+    - {fileID: 7400000, guid: 6a96bcdc6c471004b928a5d0a48d633f, type: 2}
+    - {fileID: 7400000, guid: f7fb823557121ee4b8084b6cbffbed16, type: 2}
+    - {fileID: 7400000, guid: 43cabb39453bf454485785a854705ad7, type: 2}
+    - {fileID: 7400000, guid: 8266dbfef6b75cc4ebd7cb37d14144cf, type: 2}
+    - {fileID: 7400000, guid: c5b30c4b36a60f946b1ecca1c8f3252c, type: 2}
+  attackPatterns:
+  - {fileID: 11400000, guid: 823ec20e75d2af24b8dcd073eaeb5a28, type: 2}
+  - {fileID: 11400000, guid: 86866ec20647da34aa02daa75425f492, type: 2}
+  specialGipSprites:
+  - {fileID: -8290188883838013334, guid: 4c4540402a194c64e80a2a5370935d09, type: 3}
+  - {fileID: -91128020273254493, guid: 4c4540402a194c64e80a2a5370935d09, type: 3}
+  - {fileID: 2039923265489303558, guid: 4c4540402a194c64e80a2a5370935d09, type: 3}
+  - {fileID: 1415839251064314222, guid: 4c4540402a194c64e80a2a5370935d09, type: 3}
+  maxHealth: 25
+  moveSpeed: 3
+  flying: 0
+  hitboxSize: {x: 1.4, y: 2.5}
+  hitboxCenter: {x: 0, y: 0.3}
+  agentType: 0
+  chaseRange: 10
+  LOSSightRange: 50
+  minSightRange: 25
+  minAttackCountdown: 4
+  maxAttackCountdown: 7
+  walkPointRange: 10
+  spriteVerticalSquish: 1

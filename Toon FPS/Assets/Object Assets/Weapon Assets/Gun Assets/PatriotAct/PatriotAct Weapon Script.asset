@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16154f33423f4b4d837defacff3e0b7, type: 3}
+  m_Name: PatriotAct Weapon Script
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  tabInfo:
+    tabMenuSprite: {fileID: 3205018695959130373, guid: 78117f12fed38d346b2ff3d0046ecc96,
+      type: 3}
+    formalName: Patriot Act
+    formalNameShort: Patriot Act
+    description: 
+    tutorial: 
+  metaSetup:
+    anim: {fileID: 9100000, guid: 11bbcac1c8f07af4fad3a0836f6f0ad1, type: 2}
+    pickupSprite: {fileID: 3205018695959130373, guid: 78117f12fed38d346b2ff3d0046ecc96,
+      type: 3}
+    bulletSprites:
+    - {fileID: 21300000, guid: 5bfa215fe8396d540b6b514c193dcf91, type: 3}
+    spritePattern: 0
+    impactSprite:
+    - {fileID: 2800000, guid: 346a5745250aa3e48945e01cd63025cd, type: 3}
+    impactSpriteSize: {x: 0, y: 0, z: 0}
+    crosshairSprite: {fileID: -5776421600631150107, guid: 530927a067dc01f40be0824a73204033,
+      type: 3}
+    crosshairSizeScale: 1.3
+    shootSFX:
+      name: PatriotAct_Shoot
+      clip: {fileID: 8300000, guid: 962b8530c5a317c49824146e2777f230, type: 3}
+      mixer: {fileID: -234842444670491532, guid: 38565cea782dacd4b8a7632f776ad18a,
+        type: 2}
+      volume: 0.331
+      pitch: 1
+      pitchShiftAmount: 0.1
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    altShootSFX:
+      name: 
+      clip: {fileID: 0}
+      mixer: {fileID: 0}
+      volume: 0
+      pitch: 0
+      pitchShiftAmount: 0
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    reloadSFX:
+      name: PatriotAct_Reload
+      clip: {fileID: 8300000, guid: 449648076c07cbc4a90fc397d36019fb, type: 3}
+      mixer: {fileID: -234842444670491532, guid: 38565cea782dacd4b8a7632f776ad18a,
+        type: 2}
+      volume: 0.151
+      pitch: 1
+      pitchShiftAmount: 0.1
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 1
+      source: {fileID: 0}
+    bulletSFX:
+      name: 
+      clip: {fileID: 0}
+      mixer: {fileID: 0}
+      volume: 0
+      pitch: 0
+      pitchShiftAmount: 0
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    camShakeMagnitude: 4
+    camShakeRoughness: 2
+    camShakeFadeInTime: 0.1
+    camShakeFadeOutTime: 1
+  weaponProperties:
+    altFireWeaponScript: {fileID: 0}
+    weaponStatus: {fileID: 0}
+    spreadPattern: {fileID: 7697652665275652984, guid: 7827ae36d6006ee4d8917ff2ece2ef57,
+      type: 3}
+    shootForce: 40
+    upwardForce: 0
+    timeBetweenShooting: 0.5
+    spread: 0
+    reloadTime: 1.35
+    timeBetweenShots: 0.01
+    magSize: 55
+    bulletsPerTap: 55
+    bulletsPerOneAmmo: 55
+    allowTiggerHold: 0
+    consumeAmmo: 1
+    chargeTime: 0
+    unchargeTime: 0
+    switchToTime: 0.1
+    rarity: 1
+  bulletProperties:
+    bulletSize: {x: 0.7, y: 0.7, z: 0.7}
+    bulletDamage: 1
+    maxLifetime: 3
+    pierce: 0
+    originatesFrom: 0
+    lockOn: 0
+    lockOnRampUp: 0
+    whatIsEnemy:
+      serializedVersion: 2
+      m_Bits: 256
+    whatIsIgnore:
+      serializedVersion: 2
+      m_Bits: 4096
+  bulletPhysics:
+    bounciness: 0
+    gravityMultiplier: 0
+    maxCollisions: 0
+  explosionProperties:
+    explodesOnLifetime: 0
+    explodesOnCollisionNum: 0
+    explodeOnHit: 0
+    explosionAnimation: {fileID: 0}
+    explosionSFX:
+      name: 
+      clip: {fileID: 0}
+      mixer: {fileID: 0}
+      volume: 0
+      pitch: 0
+      pitchShiftAmount: 0
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    explosionWeaponScript: {fileID: 0}

@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="PatriotAct_Reload_Project_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="0.0000000000" vpos="64" h="0.8881175567" zoom="1508.8092672409" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="FL Studio 20"/>
+	</tags>
+	<wavetrack name="Shotgun Fore end open 102" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="2.818383" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="8646">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808acf.au" len="8646" min="-0.806979" max="0.701831" rms="0.082622"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Shotgun Fore end open 102" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="2.818383" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="8646">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808c7a.au" len="8646" min="-0.816226" max="0.699141" rms="0.082778"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Shotgun Insert" isSelected="0" height="150" minimized="1" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="0.630957" pan="0.0" colorindex="0">
+		<waveclip offset="0.24480726" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="18900">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808444.au" len="18900" min="-0.277283" max="0.180664" rms="0.016117"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Shotgun Insert" isSelected="0" height="150" minimized="1" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="0.630957" pan="0.0" colorindex="0">
+		<waveclip offset="0.24480726" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="18900">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808e6e.au" len="18900" min="-0.27771" max="0.180817" rms="0.016124"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Shotgun Holster" isSelected="0" height="150" minimized="1" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="0.794328" pan="0.0" colorindex="0">
+		<waveclip offset="0.09027211" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="17449">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808d13.au" len="17449" min="-0.0711" max="0.047083" rms="0.006582"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Shotgun Holster" isSelected="0" height="150" minimized="1" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="0.794328" pan="0.0" colorindex="0">
+		<waveclip offset="0.09027211" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="17449">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808d1f.au" len="17449" min="-0.0711" max="0.047083" rms="0.006582"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Shotgun Fore end open 101" isSelected="1" height="153" minimized="1" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.778279" pan="0.0" colorindex="0">
+		<waveclip offset="0.96963719" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="18900">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808c53.au" len="18900" min="-1.207353" max="1.259679" rms="0.072632"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Shotgun Fore end open 101" isSelected="1" height="147" minimized="1" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.778279" pan="0.0" colorindex="0">
+		<waveclip offset="0.96963719" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="18900">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808332.au" len="18900" min="-1.208034" max="1.256818" rms="0.072691"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

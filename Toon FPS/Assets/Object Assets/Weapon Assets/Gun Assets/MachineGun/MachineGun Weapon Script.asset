@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16154f33423f4b4d837defacff3e0b7, type: 3}
+  m_Name: MachineGun Weapon Script
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  tabInfo:
+    tabMenuSprite: {fileID: -6980994127524994292, guid: 2cb38f15e3bc907418224ea3b14c9b22,
+      type: 3}
+    formalName: Machine Gun
+    formalNameShort: Machine Gun
+    description: 
+    tutorial: 
+  metaSetup:
+    anim: {fileID: 9100000, guid: 4ce9db57ea3738d47ae1fa36dcb29676, type: 2}
+    pickupSprite: {fileID: -6980994127524994292, guid: 2cb38f15e3bc907418224ea3b14c9b22,
+      type: 3}
+    bulletSprites:
+    - {fileID: 21300000, guid: 5bfa215fe8396d540b6b514c193dcf91, type: 3}
+    spritePattern: 0
+    impactSprite:
+    - {fileID: 2800000, guid: 346a5745250aa3e48945e01cd63025cd, type: 3}
+    impactSpriteSize: {x: 0, y: 0, z: 0}
+    crosshairSprite: {fileID: -3739957133524300147, guid: 346a5745250aa3e48945e01cd63025cd,
+      type: 3}
+    crosshairSizeScale: 0.3
+    shootSFX:
+      name: MachineGun_Shoot
+      clip: {fileID: 8300000, guid: 68dc855d7d7b16247b6fbc914b36f0be, type: 3}
+      mixer: {fileID: -234842444670491532, guid: 38565cea782dacd4b8a7632f776ad18a,
+        type: 2}
+      volume: 0.182
+      pitch: 0.72
+      pitchShiftAmount: 0.1
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    altShootSFX:
+      name: 
+      clip: {fileID: 0}
+      mixer: {fileID: 0}
+      volume: 0
+      pitch: 0
+      pitchShiftAmount: 0.1
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    reloadSFX:
+      name: MachineGun_Reload
+      clip: {fileID: 8300000, guid: ed9ede944d99166459eff74407b8e263, type: 3}
+      mixer: {fileID: -234842444670491532, guid: 38565cea782dacd4b8a7632f776ad18a,
+        type: 2}
+      volume: 1
+      pitch: 1
+      pitchShiftAmount: 0
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 1
+      source: {fileID: 0}
+    bulletSFX:
+      name: 
+      clip: {fileID: 0}
+      mixer: {fileID: 0}
+      volume: 0
+      pitch: 0
+      pitchShiftAmount: 0
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    camShakeMagnitude: 0.5
+    camShakeRoughness: 1
+    camShakeFadeInTime: 0.1
+    camShakeFadeOutTime: 1
+  weaponProperties:
+    altFireWeaponScript: {fileID: 0}
+    weaponStatus: {fileID: 0}
+    spreadPattern: {fileID: 402786872565398271, guid: 77c20f5c7890c0e4585bcf020ea49116,
+      type: 3}
+    shootForce: 60
+    upwardForce: 0
+    timeBetweenShooting: 0.1
+    spread: 3
+    reloadTime: 1.4
+    timeBetweenShots: 0.05
+    magSize: 60
+    bulletsPerTap: 2
+    bulletsPerOneAmmo: 1
+    allowTiggerHold: 1
+    consumeAmmo: 1
+    chargeTime: 0
+    unchargeTime: 0
+    switchToTime: 1
+    rarity: 2
+  bulletProperties:
+    bulletSize: {x: 0.3, y: 0.3, z: 0.3}
+    bulletDamage: 1
+    maxLifetime: 50
+    pierce: 0
+    originatesFrom: 0
+    lockOn: 0
+    lockOnRampUp: 0
+    whatIsEnemy:
+      serializedVersion: 2
+      m_Bits: 256
+    whatIsIgnore:
+      serializedVersion: 2
+      m_Bits: 4096
+  bulletPhysics:
+    bounciness: 0
+    gravityMultiplier: 0
+    maxCollisions: 0
+  explosionProperties:
+    explodesOnLifetime: 0
+    explodesOnCollisionNum: 0
+    explodeOnHit: 0
+    explosionAnimation: {fileID: 0}
+    explosionSFX:
+      name: 
+      clip: {fileID: 0}
+      mixer: {fileID: 0}
+      volume: 0
+      pitch: 0
+      pitchShiftAmount: 0
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    explosionWeaponScript: {fileID: 0}

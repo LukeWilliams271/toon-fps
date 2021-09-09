@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b01c417c4f12de248a851e6f83aba636, type: 3}
+  m_Name: Test Glock Status
+  m_EditorClassIdentifier: 
+  effectID: 
+  selfStacking: 0
+  duration: 0.01
+  speedMultiplier: 1
+  knockback: {x: 5, y: 0, z: 0}
+  DOTDamagePerSecond: 0
+  enemyStatusAnimation: {fileID: 9100000, guid: 1f15132304ff82348aaeb28bcd2183c2,
+    type: 2}

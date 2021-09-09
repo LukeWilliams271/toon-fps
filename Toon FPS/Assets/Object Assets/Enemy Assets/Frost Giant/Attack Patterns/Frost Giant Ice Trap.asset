@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21176cde79dcbd94bbeb5a938a3a3911, type: 3}
+  m_Name: Frost Giant Ice Trap
+  m_EditorClassIdentifier: 
+  vFXAndSFX:
+    shootSFX: 
+    startingLag: 0
+    endingLag: 0
+    bulletSprites:
+    - {fileID: 8864152934778030577, guid: dcb57c20c1566ef47ac3056bfaebe17e, type: 3}
+    - {fileID: 2148081450519197595, guid: dcb57c20c1566ef47ac3056bfaebe17e, type: 3}
+    - {fileID: -7284613505221256363, guid: dcb57c20c1566ef47ac3056bfaebe17e, type: 3}
+    impactTexture: []
+    impactTextureSize: {x: 0, y: 0, z: 0}
+    impactOnBounce: 0
+    dirAnimations:
+      clips:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+  weaponProperties:
+    spreadPattern: {fileID: 7677055862279803886, guid: cef8d9601991f4340bfe479cf851715f,
+      type: 3}
+    range: 0
+    strafePattern: {fileID: 0}
+    shootForce: 0
+    upwardForce: 0
+    spread: 0
+    timeBetweenShots: 0.01
+    bulletsPerTap: 9
+  bulletProperties:
+    bulletSize: 1
+    bulletDamage: 5
+    maxLifetime: 10
+    guided: 0
+    guidedRampUp: 0
+  bulletPhysics:
+    bounciness: 0
+    gravityMultiplier: 0
+    maxCollisions: 5
+  explosionProperties:
+    explodesOnLifetime: 0
+    explodesOnCollision: 0
+    explodeOnHit: 0
+    explosionAnimation: {fileID: 0}
+    explosionAttackPattern: {fileID: 0}

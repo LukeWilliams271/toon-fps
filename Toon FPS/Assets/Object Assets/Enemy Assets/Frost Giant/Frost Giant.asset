@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde1a7d0ea41ef14c90719628d1c78a1, type: 3}
+  m_Name: Frost Giant
+  m_EditorClassIdentifier: 
+  animCont: {fileID: 9100000, guid: 8cc673fe10ef69c4ea6f41a73e2e8faf, type: 2}
+  deathAnimation: {fileID: 7400000, guid: 7c23018868efa484287c9e3abb65d407, type: 2}
+  animations:
+  - clips:
+    - {fileID: 7400000, guid: da54b9334f2a3e9408079a5d04fd3740, type: 2}
+    - {fileID: 7400000, guid: e368f95c7d3592b4c8a25299e718e50c, type: 2}
+    - {fileID: 7400000, guid: d6ca9fc06bcf9a14490b263d646682de, type: 2}
+    - {fileID: 7400000, guid: fbd928f13c518b74c991c78d1b597fbd, type: 2}
+    - {fileID: 7400000, guid: 3935c733fcca75d46914fc2323333e83, type: 2}
+    - {fileID: 7400000, guid: a5c4f467529b03d4d88588b23345b9cf, type: 2}
+    - {fileID: 7400000, guid: 654c903c7f8b65548b88d1e2e4c3c021, type: 2}
+    - {fileID: 7400000, guid: f94c7ca9fcf47c442bd46610c1c2f21c, type: 2}
+  attackPatterns:
+  - {fileID: 11400000, guid: 22043e7b343d71743a93d7d8c018f4d0, type: 2}
+  - {fileID: 11400000, guid: be62bd256c8510d4bae69086b9179edf, type: 2}
+  specialGipSprites:
+  - {fileID: 2756072009604039620, guid: a0bb264bdf25ab142a77c484350af1fe, type: 3}
+  - {fileID: -8012202434706605316, guid: a0bb264bdf25ab142a77c484350af1fe, type: 3}
+  - {fileID: 1211063508433961019, guid: a0bb264bdf25ab142a77c484350af1fe, type: 3}
+  - {fileID: -3274807023590235927, guid: a0bb264bdf25ab142a77c484350af1fe, type: 3}
+  maxHealth: 100
+  moveSpeed: 3
+  flying: 0
+  hitboxSize: {x: 2.7, y: 2.5}
+  hitboxCenter: {x: 0, y: 0.3}
+  agentType: 0
+  chaseRange: 10
+  LOSSightRange: 50
+  minSightRange: 25
+  minAttackCountdown: 7
+  maxAttackCountdown: 10
+  walkPointRange: 10
+  spriteVerticalSquish: 1

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21176cde79dcbd94bbeb5a938a3a3911, type: 3}
+  m_Name: FG Melee Attack
+  m_EditorClassIdentifier: 
+  vFXAndSFX:
+    shootSFX: 
+    startingLag: 0.25
+    endingLag: 0.35
+    bulletAnims: []
+    impactTexture: []
+    impactTextureSize: {x: 0, y: 0, z: 0}
+    impactOnBounce: 0
+    dirAnimations:
+      clips:
+      - {fileID: 7400000, guid: 31d165102e79a9c4eb8049b37cb7de54, type: 2}
+      - {fileID: 7400000, guid: 31d165102e79a9c4eb8049b37cb7de54, type: 2}
+      - {fileID: 7400000, guid: 31d165102e79a9c4eb8049b37cb7de54, type: 2}
+      - {fileID: 7400000, guid: 31d165102e79a9c4eb8049b37cb7de54, type: 2}
+      - {fileID: 7400000, guid: 31d165102e79a9c4eb8049b37cb7de54, type: 2}
+      - {fileID: 7400000, guid: 31d165102e79a9c4eb8049b37cb7de54, type: 2}
+      - {fileID: 7400000, guid: 31d165102e79a9c4eb8049b37cb7de54, type: 2}
+      - {fileID: 7400000, guid: 31d165102e79a9c4eb8049b37cb7de54, type: 2}
+  weaponProperties:
+    spreadPattern: {fileID: 18409057750521140, guid: f7b675c488658f848beb28271d97a470,
+      type: 3}
+    range: 2
+    strafePattern: {fileID: 0}
+    shootForce: 3
+    upwardForce: 0
+    spread: 0
+    timeBetweenShots: 0
+    bulletsPerTap: 1
+  bulletProperties:
+    bulletSize: 5
+    bulletDamage: 20
+    maxLifetime: 0.3
+    guided: 0
+    guidedRampUp: 0
+  bulletPhysics:
+    bounciness: 0
+    gravityMultiplier: 0
+    maxCollisions: 5
+  explosionProperties:
+    explodes: 0
+    explosionPrefab: {fileID: 0}
+    explosionDmg: 0
+    explosionRange: 0
+    explodeOnHit: 0

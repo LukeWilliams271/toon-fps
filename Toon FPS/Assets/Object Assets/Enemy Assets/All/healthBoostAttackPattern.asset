@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21176cde79dcbd94bbeb5a938a3a3911, type: 3}
+  m_Name: healthBoostAttackPattern
+  m_EditorClassIdentifier: 
+  vFXAndSFX:
+    shootSFX: 
+    startingLag: 0
+    endingLag: 0
+    bulletSprites:
+    - {fileID: 3356837773014537050, guid: 02c6f7bb96d615b4bb7f54f0a66fe03b, type: 3}
+    impactTexture: []
+    impactTextureSize: {x: 0, y: 0, z: 0}
+    impactOnBounce: 0
+    dirAnimations:
+      clips:
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+      - {fileID: 0}
+  weaponProperties:
+    spreadPattern: {fileID: 7191087608787302179, guid: a5592efe0b89e57458e9b1f7e374ca11,
+      type: 3}
+    range: 50
+    strafePattern: {fileID: 0}
+    shootForce: 5
+    upwardForce: 4
+    spread: 10
+    timeBetweenShots: 0.03
+    bulletsPerTap: 3
+  bulletProperties:
+    bulletSize: 1
+    bulletDamage: -3
+    maxLifetime: 20
+    guided: 0.186
+    guidedRampUp: 0.3
+  bulletPhysics:
+    bounciness: 0.496
+    gravityMultiplier: 0
+    maxCollisions: 5
+  explosionProperties:
+    explodesOnLifetime: 0
+    explodesOnCollision: 0
+    explodeOnHit: 0
+    explosionAnimation: {fileID: 0}
+    explosionAttackPattern: {fileID: 0}

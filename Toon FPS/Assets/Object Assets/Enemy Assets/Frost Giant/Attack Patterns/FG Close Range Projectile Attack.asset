@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21176cde79dcbd94bbeb5a938a3a3911, type: 3}
+  m_Name: FG Close Range Projectile Attack
+  m_EditorClassIdentifier: 
+  vFXAndSFX:
+    shootSFX: 
+    startingLag: 0.6
+    endingLag: 0.3
+    bulletSprites:
+    - {fileID: 8803949320029046631, guid: 46ba7a22ab559cf40b412f9bc2bf0d39, type: 3}
+    impactTexture:
+    - {fileID: 2800000, guid: 89b6ea595f89fcd40bf38231195846bb, type: 3}
+    impactTextureSize: {x: 3, y: 3, z: 0}
+    impactOnBounce: 0
+    dirAnimations:
+      clips:
+      - {fileID: 7400000, guid: 894295ab83a7aa340855307ba49f02b5, type: 2}
+      - {fileID: 7400000, guid: 894295ab83a7aa340855307ba49f02b5, type: 2}
+      - {fileID: 7400000, guid: 894295ab83a7aa340855307ba49f02b5, type: 2}
+      - {fileID: 7400000, guid: 894295ab83a7aa340855307ba49f02b5, type: 2}
+      - {fileID: 7400000, guid: 894295ab83a7aa340855307ba49f02b5, type: 2}
+      - {fileID: 7400000, guid: 894295ab83a7aa340855307ba49f02b5, type: 2}
+      - {fileID: 7400000, guid: 894295ab83a7aa340855307ba49f02b5, type: 2}
+      - {fileID: 7400000, guid: 894295ab83a7aa340855307ba49f02b5, type: 2}
+  weaponProperties:
+    spreadPattern: {fileID: 913166653985565050, guid: acd8b700f7a44cb44bb5c1e41e6afbe1,
+      type: 3}
+    range: 8
+    strafePattern: {fileID: 1095432464619585416, guid: 7eb8009d433cb1c48b1331f668b9ce9b,
+      type: 3}
+    shootForce: 2
+    upwardForce: 5
+    spread: 10
+    timeBetweenShots: 0.01
+    bulletsPerTap: 5
+  bulletProperties:
+    bulletSize: 2
+    bulletDamage: 15
+    maxLifetime: 10
+    guided: 0
+    guidedRampUp: 0
+  bulletPhysics:
+    bounciness: 0
+    gravityMultiplier: 0.1
+    maxCollisions: 5
+  explosionProperties:
+    explodesOnLifetime: 0
+    explodesOnCollision: 0
+    explodeOnHit: 0
+    explosionAnimation: {fileID: 0}
+    explosionAttackPattern: {fileID: 0}

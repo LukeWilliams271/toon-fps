@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16154f33423f4b4d837defacff3e0b7, type: 3}
+  m_Name: CrusaderSword
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  metaSetup:
+    anim: {fileID: 9100000, guid: 7dce9d0a3c0903049b75ddc88148fd10, type: 2}
+    pickupSprite: {fileID: 8056269757015164320, guid: 2fcfe54d585826e488dbc784ca2e6b9f,
+      type: 3}
+    bulletSprites:
+    - {fileID: 0}
+    spritePattern: 0
+    impactSprite: []
+    impactSpriteSize: {x: 0, y: 0, z: 0}
+    crosshairSprite: {fileID: 4009355068965086491, guid: bff102c3673e63b48a0e9d2caa4682fa,
+      type: 3}
+    crosshairSizeScale: 0.5
+    shootSFX:
+      name: 
+      clip: {fileID: 0}
+      mixer: {fileID: 0}
+      volume: 0
+      pitch: 0
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    altShootSFX:
+      name: 
+      clip: {fileID: 0}
+      mixer: {fileID: 0}
+      volume: 0
+      pitch: 0
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    reloadSFX:
+      name: 
+      clip: {fileID: 0}
+      mixer: {fileID: 0}
+      volume: 0
+      pitch: 0
+      loops: 0
+      reverb: 0
+      cancelOnWeaponSwap: 0
+      source: {fileID: 0}
+    camShakeMagnitude: 0.01
+    camShakeRoughness: 0.01
+    camShakeFadeInTime: 0.01
+    camShakeFadeOutTime: 0.01
+  tabInfo:
+    tabMenuSprite: {fileID: 8056269757015164320, guid: 2fcfe54d585826e488dbc784ca2e6b9f,
+      type: 3}
+    formalName: Sword
+    formalNameShort: Sword
+    description: Swingy swing
+    tutorial: 
+  weaponProperties:
+    altFireWeaponScript: {fileID: 0}
+    weaponStatus: {fileID: 0}
+    spreadPattern: {fileID: 8735623972703608707, guid: 9ea85cde82346ae4289c734f0f7c2d08,
+      type: 3}
+    shootForce: 0
+    upwardForce: 0
+    timeBetweenShooting: 0.63
+    spread: 0
+    reloadTime: 0
+    timeBetweenShots: 0
+    magSize: 0
+    bulletsPerTap: 0
+    bulletsPerOneAmmo: 0
+    allowTiggerHold: 0
+    consumeAmmo: 0
+    switchToTime: 0.02
+    rarity: 3
+  bulletProperties:
+    bulletSize: {x: 4, y: 4, z: 1}
+    bulletDamage: 100
+    maxLifetime: 0.3
+    pierce: 0
+    originatesFrom: 0
+    lockOn: 0
+    lockOnRampUp: 0
+    whatIsEnemy:
+      serializedVersion: 2
+      m_Bits: 256
+    whatIsIgnore:
+      serializedVersion: 2
+      m_Bits: 4096
+  bulletPhysics:
+    bounciness: 0
+    gravityMultiplier: 0
+    maxCollisions: 100
+  explosionProperties:
+    explodesOnLifetime: 0
+    explodesOnCollisionNum: 0
+    explodeOnHit: 0
+    explosionProjectileWeaponScript: {fileID: 0}

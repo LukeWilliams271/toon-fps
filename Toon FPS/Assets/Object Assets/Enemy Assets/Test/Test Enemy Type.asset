@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde1a7d0ea41ef14c90719628d1c78a1, type: 3}
+  m_Name: Test Enemy Type
+  m_EditorClassIdentifier: 
+  animCont: {fileID: 9100000, guid: 5214b3830e5df514e9fc8114f0354e1e, type: 2}
+  animations:
+  - clips:
+    - {fileID: 7400000, guid: da31fb174b399954491bc8799b0cd727, type: 2}
+    - {fileID: 7400000, guid: 69ac3ef3f2194e54d8f810502d9a116b, type: 2}
+    - {fileID: 7400000, guid: bf0f725344f36dc4eab65334128c86f2, type: 2}
+    - {fileID: 7400000, guid: b37a90a44219a604280bb65e7f9ab2f0, type: 2}
+    - {fileID: 7400000, guid: c753cfd7dbcd58f4698267101613d8e2, type: 2}
+    - {fileID: 7400000, guid: 641c59ce6e06d14438798e521824e947, type: 2}
+    - {fileID: 7400000, guid: 21bb8164d44751f4b863d2d08ab22028, type: 2}
+    - {fileID: 7400000, guid: 8079eda4d2ff0d0428963852ed4c3842, type: 2}
+  - clips:
+    - {fileID: 7400000, guid: da31fb174b399954491bc8799b0cd727, type: 2}
+    - {fileID: 7400000, guid: 69ac3ef3f2194e54d8f810502d9a116b, type: 2}
+    - {fileID: 7400000, guid: bf0f725344f36dc4eab65334128c86f2, type: 2}
+    - {fileID: 7400000, guid: b37a90a44219a604280bb65e7f9ab2f0, type: 2}
+    - {fileID: 7400000, guid: c753cfd7dbcd58f4698267101613d8e2, type: 2}
+    - {fileID: 7400000, guid: 641c59ce6e06d14438798e521824e947, type: 2}
+    - {fileID: 7400000, guid: 21bb8164d44751f4b863d2d08ab22028, type: 2}
+    - {fileID: 7400000, guid: 8079eda4d2ff0d0428963852ed4c3842, type: 2}
+  - clips:
+    - {fileID: 7400000, guid: da31fb174b399954491bc8799b0cd727, type: 2}
+    - {fileID: 7400000, guid: 69ac3ef3f2194e54d8f810502d9a116b, type: 2}
+    - {fileID: 7400000, guid: bf0f725344f36dc4eab65334128c86f2, type: 2}
+    - {fileID: 7400000, guid: b37a90a44219a604280bb65e7f9ab2f0, type: 2}
+    - {fileID: 7400000, guid: c753cfd7dbcd58f4698267101613d8e2, type: 2}
+    - {fileID: 7400000, guid: 641c59ce6e06d14438798e521824e947, type: 2}
+    - {fileID: 7400000, guid: 21bb8164d44751f4b863d2d08ab22028, type: 2}
+    - {fileID: 7400000, guid: 8079eda4d2ff0d0428963852ed4c3842, type: 2}
+  - clips:
+    - {fileID: 7400000, guid: da31fb174b399954491bc8799b0cd727, type: 2}
+    - {fileID: 7400000, guid: 69ac3ef3f2194e54d8f810502d9a116b, type: 2}
+    - {fileID: 7400000, guid: bf0f725344f36dc4eab65334128c86f2, type: 2}
+    - {fileID: 7400000, guid: b37a90a44219a604280bb65e7f9ab2f0, type: 2}
+    - {fileID: 7400000, guid: c753cfd7dbcd58f4698267101613d8e2, type: 2}
+    - {fileID: 7400000, guid: 641c59ce6e06d14438798e521824e947, type: 2}
+    - {fileID: 7400000, guid: 21bb8164d44751f4b863d2d08ab22028, type: 2}
+    - {fileID: 7400000, guid: 8079eda4d2ff0d0428963852ed4c3842, type: 2}
+  attackPatterns:
+  - {fileID: 11400000, guid: cc186a4a16c985d4dbf3acc6c34d2c32, type: 2}
+  maxHealth: 8
+  moveSpeed: 8
+  hitbox: {fileID: 0}
+  chaseRange: 30
+  LOSSightRange: 50
+  minSightRange: 25
+  minAttackCountdown: 1
+  maxAttackCountdown: 6
+  walkPointRange: 7

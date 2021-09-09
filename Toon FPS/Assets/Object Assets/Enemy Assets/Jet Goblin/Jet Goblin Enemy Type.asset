@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde1a7d0ea41ef14c90719628d1c78a1, type: 3}
+  m_Name: Jet Goblin Enemy Type
+  m_EditorClassIdentifier: 
+  animCont: {fileID: 9100000, guid: 53174f6fa1071d54d8d9d0378228b48c, type: 2}
+  deathAnimation: {fileID: 7400000, guid: 8e5e0acf63d0d9844a638923754e6966, type: 2}
+  animations:
+  - clips:
+    - {fileID: 7400000, guid: 62752bc97aa11a04cbbbf9c7b06f5dab, type: 2}
+    - {fileID: 7400000, guid: 373f2be397bd6304596a1bbc80bf5612, type: 2}
+    - {fileID: 7400000, guid: 1278a0999b3aff64f88ce49a37cdd716, type: 2}
+    - {fileID: 7400000, guid: 4642b351209c1ed4da4c256ccdb6527a, type: 2}
+    - {fileID: 7400000, guid: 70cd522b92c0b594db4d828a9da3af46, type: 2}
+    - {fileID: 7400000, guid: 395a348702e73c542ab2bcee1a1ce965, type: 2}
+    - {fileID: 7400000, guid: 584289cf544969948ba815a3296cf09a, type: 2}
+    - {fileID: 7400000, guid: aceb7d2712fe0a74dafb2907d4326ff8, type: 2}
+  attackPatterns:
+  - {fileID: 11400000, guid: d063d067e20631240b0a95beab6d5f30, type: 2}
+  specialGipSprites:
+  - {fileID: 1939053171497470349, guid: 534525cc15758c843bfca6519f2a0819, type: 3}
+  - {fileID: -5194900300638311179, guid: 534525cc15758c843bfca6519f2a0819, type: 3}
+  - {fileID: -7907408928813415774, guid: 534525cc15758c843bfca6519f2a0819, type: 3}
+  - {fileID: -8357962803430291033, guid: 534525cc15758c843bfca6519f2a0819, type: 3}
+  maxHealth: 50
+  moveSpeed: 50
+  flying: 1
+  hitboxSize: {x: 3, y: 2}
+  hitboxCenter: {x: 0.1, y: 0.1}
+  agentType: 1
+  chaseRange: 60
+  LOSSightRange: 200
+  minSightRange: 25
+  minAttackCountdown: 7
+  maxAttackCountdown: 10
+  walkPointRange: 10
+  spriteVerticalSquish: 0

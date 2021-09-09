@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21176cde79dcbd94bbeb5a938a3a3911, type: 3}
+  m_Name: Test Attack Pattern
+  m_EditorClassIdentifier: 
+  vFXAndSFX:
+    shootSFX: 
+    startingLag: 0.1
+    endingLag: 0.1
+    bulletSprite: {fileID: 21300000, guid: 5bfa215fe8396d540b6b514c193dcf91, type: 3}
+    dirAnimations:
+      clips:
+      - {fileID: 7400000, guid: da31fb174b399954491bc8799b0cd727, type: 2}
+      - {fileID: 7400000, guid: 69ac3ef3f2194e54d8f810502d9a116b, type: 2}
+      - {fileID: 7400000, guid: bf0f725344f36dc4eab65334128c86f2, type: 2}
+      - {fileID: 7400000, guid: b37a90a44219a604280bb65e7f9ab2f0, type: 2}
+      - {fileID: 7400000, guid: c753cfd7dbcd58f4698267101613d8e2, type: 2}
+      - {fileID: 7400000, guid: 641c59ce6e06d14438798e521824e947, type: 2}
+      - {fileID: 7400000, guid: 21bb8164d44751f4b863d2d08ab22028, type: 2}
+      - {fileID: 7400000, guid: 8079eda4d2ff0d0428963852ed4c3842, type: 2}
+  weaponProperties:
+    spreadPattern: {fileID: 4196894342222308177, guid: bf613c8d6415f2f4eb32e4581d087bb5,
+      type: 3}
+    range: 10
+    strafePattern: {fileID: 0}
+    shootForce: 15
+    upwardForce: 0
+    spread: 3
+    timeBetweenShots: 0.05
+    bulletsPerTap: 10
+  bulletProperties:
+    bulletSize: 1
+    bulletDamage: 2
+    maxLifetime: 7
+    guided: 0
+  bulletPhysics:
+    bounciness: 0
+    useGravity: 0
+    maxCollisions: 1
+  explosionProperties:
+    explodes: 0
+    explosionPrefab: {fileID: 0}
+    explosionDmg: 0
+    explosionRange: 0
+    explodeOnHit: 0
