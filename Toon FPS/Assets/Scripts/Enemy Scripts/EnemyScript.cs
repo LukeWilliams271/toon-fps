@@ -304,6 +304,7 @@ public class EnemyScript : MonoBehaviour
         {
             RaycastHit heightCheck;
             Physics.Raycast(transform.position, Vector3.down, out heightCheck, whatIsGround);
+            Debug.Log(Vector3.Distance(transform.position, heightCheck.transform.position));
             if (Vector3.Distance(transform.position, heightCheck.transform.position) < 5)
             {
                 flyingEnemyY = Random.Range(0, enemy.walkPointRange / 2);
