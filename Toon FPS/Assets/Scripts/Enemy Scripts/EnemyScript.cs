@@ -105,6 +105,7 @@ public class EnemyScript : MonoBehaviour
     float lerpValue;
 
     float flyingEnemyY;
+    float flyingStartY;
 
     public void Start()
     {
@@ -116,6 +117,7 @@ public class EnemyScript : MonoBehaviour
         GetComponent<HealthManagement>().maxHealth = enemy.maxHealth;
         graphicHolder.GetComponent<BoxCollider>().size = new Vector3(enemy.hitboxSize.x, enemy.hitboxSize.y, 1);
         graphicHolder.GetComponent<BoxCollider>().center = new Vector3(enemy.hitboxCenter.x, enemy.hitboxCenter.y, 0);
+        flyingStartY = transform.position.y;
     }
     public void Update()
     {
@@ -302,17 +304,18 @@ public class EnemyScript : MonoBehaviour
 
         if (enemy.flying)
         {
-            RaycastHit heightCheck;
-            Physics.Raycast(transform.position, Vector3.down, out heightCheck, whatIsGround);
-            Debug.Log(Vector3.Distance(transform.position, heightCheck.transform.position));
-            if (Vector3.Distance(transform.position, heightCheck.transform.position) < 5)
+            if (transform.position.y < flyingStartY - 3)
             {
                 flyingEnemyY = Random.Range(0, enemy.walkPointRange / 2);
-            }
-            else if (Vector3.Distance(transform.position, heightCheck.transform.position) > 15)
+            } 
+            else if (transform.position.y > flyingStartY + 3)
             {
                 flyingEnemyY = Random.Range(-enemy.walkPointRange / 2, 0);
-            } else flyingEnemyY = Random.Range(-enemy.walkPointRange / 2, enemy.walkPointRange / 2);
+            } 
+            else
+            {
+                flyingEnemyY = Random.Range(-enemy.walkPointRange, enemy.walkPointRange);
+            }
         }
         else flyingEnemyY = 0;
 

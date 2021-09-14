@@ -42,5 +42,5 @@ MonoBehaviour:
   minSightRange: 25
   minAttackCountdown: 7
   maxAttackCountdown: 10
-  walkPointRange: 10
+  walkPointRange: 5
   spriteVerticalSquish: 0
