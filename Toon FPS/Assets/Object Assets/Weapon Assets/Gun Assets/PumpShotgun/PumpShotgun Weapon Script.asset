@@ -74,24 +74,24 @@ MonoBehaviour:
       reverb: 0
       cancelOnWeaponSwap: 0
       source: {fileID: 0}
-    camShakeMagnitude: 3
-    camShakeRoughness: 2
+    camShakeMagnitude: 2
+    camShakeRoughness: 1.5
     camShakeFadeInTime: 0.1
     camShakeFadeOutTime: 1
   weaponProperties:
     altFireWeaponScript: {fileID: 0}
     weaponStatus: {fileID: 0}
-    spreadPattern: {fileID: 7585223052260316735, guid: dea224960ad1eb9439bb8ff11480f1be,
+    spreadPattern: {fileID: 4196894342222308177, guid: bf613c8d6415f2f4eb32e4581d087bb5,
       type: 3}
-    shootForce: 75
+    shootForce: 55
     upwardForce: 0
-    timeBetweenShooting: 0.4
-    spread: 0.3
-    reloadTime: 1
+    timeBetweenShooting: 0.78
+    spread: 3
+    reloadTime: 1.8
     timeBetweenShots: 0.01
-    magSize: 5
+    magSize: 50
     bulletsPerTap: 10
-    bulletsPerOneAmmo: 1
+    bulletsPerOneAmmo: 10
     allowTiggerHold: 0
     consumeAmmo: 1
     chargeTime: 0
