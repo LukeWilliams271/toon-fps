@@ -74,14 +74,17 @@ public class NewWeaponPickup : MonoBehaviour
     }
 
     private void OnCollisionStay(Collision collision)
-    {  
+    {
         if (collision.gameObject.CompareTag("Player") && weaponShown == true)
         {
+
             collision.gameObject.GetComponent<HealthManagement>().playerCont.hudManager.PromptInteract("collect " + w.tabInfo.formalName);
             collectable = true;   
         }
         if (collision.gameObject.CompareTag("Player") && opened == false)
         {
+            Debug.Log("Hello");
+
             collision.gameObject.GetComponent<HealthManagement>().playerCont.hudManager.PromptInteract("open gift");
             openable = true;
         }

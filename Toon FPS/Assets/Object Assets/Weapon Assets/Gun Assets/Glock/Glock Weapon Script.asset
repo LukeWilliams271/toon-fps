@@ -105,7 +105,7 @@ MonoBehaviour:
     rarity: 0
   bulletProperties:
     bulletSize: {x: 0.3, y: 0.3, z: 0.3}
-    bulletDamage: 1
+    bulletDamage: 10
     maxLifetime: 50
     pierce: 2
     originatesFrom: 0
